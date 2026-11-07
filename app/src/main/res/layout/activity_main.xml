@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CDE0B4">
+
+    <WebView
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/setup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="48dp"
+        android:background="#1B2530">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chor Police"
+            android:textColor="#F6BF1A"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="640dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="Start the game on your laptop, then press Find my game."
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/find"
+            android:layout_width="420dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Find my game"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/addr"
+            android:layout_width="420dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="or type the laptop address, e.g. 192.168.1.5"
+            android:inputType="textUri"
+            android:singleLine="true"
+            android:imeOptions="actionGo"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#9AA7B3"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/connect"
+            android:layout_width="420dp"
+            android:layout_height="wrap_content"
+            android:text="Connect"
+            android:textSize="24sp" />
+    </LinearLayout>
+</FrameLayout>
